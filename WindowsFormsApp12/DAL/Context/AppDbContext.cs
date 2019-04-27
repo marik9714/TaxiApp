@@ -3,7 +3,7 @@ using WindowsFormsApp12.DAL.Models;
 
 namespace WindowsFormsApp12.DAL.Context
 {
-    public class AppContext : DbContext
+    public class AppDbContext : DbContext
     {
         public DbSet<Car> Cars { get; set; }
         public DbSet<CarColor> CarColors { get; set; }
@@ -15,7 +15,7 @@ namespace WindowsFormsApp12.DAL.Context
         public DbSet<Street> Streets { get; set; }
         public DbSet<Traffic> Traffics { get; set; }
 
-        public AppContext() : base("name=AppContext")
+        public AppDbContext() : base("name=AppContext")
         {
         }
 

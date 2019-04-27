@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -38,21 +37,12 @@
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(408, 340);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(248, 73);
-            this.button8.TabIndex = 15;
-            this.button8.Text = "Параметры машин";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
-            // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(408, 250);
+            this.button7.Location = new System.Drawing.Point(544, 308);
+            this.button7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(248, 73);
+            this.button7.Size = new System.Drawing.Size(331, 90);
             this.button7.TabIndex = 14;
             this.button7.Text = "Касса";
             this.button7.UseVisualStyleBackColor = true;
@@ -60,9 +50,10 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(408, 142);
+            this.button6.Location = new System.Drawing.Point(544, 175);
+            this.button6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(248, 73);
+            this.button6.Size = new System.Drawing.Size(331, 90);
             this.button6.TabIndex = 13;
             this.button6.Text = "Движение";
             this.button6.UseVisualStyleBackColor = true;
@@ -70,9 +61,10 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(408, 37);
+            this.button5.Location = new System.Drawing.Point(544, 46);
+            this.button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(248, 73);
+            this.button5.Size = new System.Drawing.Size(331, 90);
             this.button5.TabIndex = 12;
             this.button5.Text = "Улицы";
             this.button5.UseVisualStyleBackColor = true;
@@ -80,9 +72,10 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(144, 344);
+            this.button4.Location = new System.Drawing.Point(192, 423);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(248, 69);
+            this.button4.Size = new System.Drawing.Size(331, 85);
             this.button4.TabIndex = 11;
             this.button4.Text = "Клиенты";
             this.button4.UseVisualStyleBackColor = true;
@@ -90,9 +83,10 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(144, 250);
+            this.button3.Location = new System.Drawing.Point(192, 308);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(248, 68);
+            this.button3.Size = new System.Drawing.Size(331, 84);
             this.button3.TabIndex = 10;
             this.button3.Text = "Диспетчеры";
             this.button3.UseVisualStyleBackColor = true;
@@ -100,9 +94,10 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(144, 142);
+            this.button2.Location = new System.Drawing.Point(192, 175);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(248, 66);
+            this.button2.Size = new System.Drawing.Size(331, 81);
             this.button2.TabIndex = 9;
             this.button2.Text = "Водители";
             this.button2.UseVisualStyleBackColor = true;
@@ -110,9 +105,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(144, 37);
+            this.button1.Location = new System.Drawing.Point(192, 46);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(248, 73);
+            this.button1.Size = new System.Drawing.Size(331, 90);
             this.button1.TabIndex = 8;
             this.button1.Text = "Машины";
             this.button1.UseVisualStyleBackColor = true;
@@ -120,11 +116,10 @@
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button8);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
@@ -132,6 +127,7 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form2";
             this.Text = "Form2";
             this.ResumeLayout(false);
@@ -139,8 +135,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;

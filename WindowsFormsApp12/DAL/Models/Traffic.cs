@@ -21,7 +21,7 @@ namespace WindowsFormsApp12.DAL.Models
 
         public string Note { get; set; }
 
-        public decimal OrederCost { get; set; }
+        public decimal OrderCost { get; set; }
 
         public OrderType? OrderType { get; set; }
     }
