@@ -67,5 +67,90 @@ namespace WindowsFormsApp12.DAL
             return response;
         }
 
+        /// <summary>
+        /// 1 Финансовый отчет по приходу на «I-ю» дату «j-го» диспетчера
+        /// </summary>
+        /// <returns></returns>
+        public List<Cashbox> Task_2_1(int day, int dispetcherId)
+        {
+            var response = context.Cashboxs.Where(x => x.CreateionDateTime.Value.Day == day && x.DispatcherId == dispetcherId).ToList();
+
+            return response;
+        }
+
+        /// <summary>
+        /// 2 Наряд на «I-ый» заказ
+        /// </summary>
+        /// <returns></returns>
+        public List<Traffic> Task_2_2(int trafficId)
+        {
+            var response = context.Traffics.Where(x => x.Id == trafficId).ToList();
+
+            return response;
+        }
+
+        /// <summary>
+        /// 3 Список машин, задействованных «j-го» числа
+        /// </summary>
+        /// <returns></returns>
+        public List<Car> Task_2_3(int day)
+        {
+            var response = context.Traffics.Where(x => x.CreateionDateTime.Value.Day == day).Select(x=>x.Car).ToList();
+
+            return response;
+        }
+
+
+        /// <summary>
+        /// 1. Из таблицы Движение выбрать строки по условию: заказы «I-го» водителя на «j-ю» дату (* код водителя и дату задавать как параметр);
+        /// </summary>
+        /// <returns></returns>
+        public List<Traffic> Task_3_1(int day, int driverId)
+        {
+            var response = context.Traffics.Where(x => x.CreateionDateTime.Value.Day == day && x.DriverId == driverId).ToList();
+
+            return response;
+        }
+
+        /// <summary>
+        /// 2. Из таблицы Клиенты выбрать количество заказов I-го клиента (* код клиента задавать как параметр);
+        /// </summary>
+        /// <returns></returns>
+        public int Task_3_2(int clientId)
+        {
+            var response = context.Traffics.Where(x => x.ClientId == clientId).Count();
+
+            return response;
+        }
+
+        /// <summary>
+        /// 3. Вставить три новых строки в таблицу Цвета
+        /// </summary>
+        /// <returns></returns>
+        public void Task_3_3()
+        {
+            for(int i =0; i<4;i++)
+            {
+                context.CarColors.Add(new CarColor()
+                {
+                    ColorName = $"Новый цвет #{i}"
+                });
+                context.SaveChanges();
+            }
+        }
+
+        /// <summary>
+        /// 4. Вычислить количество бесплатных заказов I-го водителя по таблице Движение (* код водителя задавать как параметр)
+        /// </summary>
+        /// <returns></returns>
+        public int Task_3_4(int driverId)
+        {
+            var response = context.Traffics.Where(x => x.DriverId == driverId && x.OrderType == Enums.OrderType.Free).Count();
+
+            return response;
+        }
+
+
+
     }
 }
