@@ -21,5 +21,11 @@ namespace WindowsFormsApp12
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form11 f = new Form11();
+            f.Show();
+        }
     }
 }
