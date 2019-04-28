@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using WindowsFormsApp12.DAL;
 
 namespace WindowsFormsApp12
 {
@@ -8,6 +9,8 @@ namespace WindowsFormsApp12
         public Form1()
         {
             InitializeComponent();
+
+            new Requests().InitializerDb();
 
         }
 
